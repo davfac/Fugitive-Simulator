@@ -11,9 +11,12 @@ def classificatore():
     while(età < 13 or età > 90):
         try:
             età = (int)(input("Inserisci la tua età: "))
-            if(età < 13 or età > 90):
+            if(età < 13 ):
                 print("Non è troppo presto per commettere reati?")
-                print("Vengono considerati i reati solo per persone con età da 13 a 90 anni.")
+                print("Vengono considerati i reati solo per persone con età da 13 a 100 anni.")
+            if(età > 100):
+                print("A quell'età riesci ancora a commettere crimini?")
+                print("Vengono considerati i reati solo per persone con età da 13 a 100 anni.")
         except ValueError:
             print("Devi inserire l'età a numero.")
     while(reato != 'omicidio' and reato != 'rapina' and reato != 'estorsione'):
