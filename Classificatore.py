@@ -8,7 +8,7 @@ def classificatore():
     età = 0
     reato = ""
 
-    while(età < 13 or età > 90):
+    while(età < 13 or età > 100):
         try:
             età = (int)(input("Inserisci la tua età: "))
             if(età < 13 ):
